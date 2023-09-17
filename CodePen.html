@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePen</title>
+    <link rel="stylesheet" href="CodePen.css">
+</head>
+<body>
+    <div class="overall">
+        <div class="nav">
+            <div id="title"><span>C</span>ode <span>E</span>ditor <sub>by </sub><span id="author">Kumar Raja</span></div>
+            <div class="extranav">
+                <div id="gpt" class="extra">ChatGpt</div>
+                <div id="bard" class="extra">GoogleBard</div>
+                <div id="w3" class="extra">W3 Schools</div>
+            </div>
+        </div>
+        <div class="langnames">
+            <div id="HTML" class="langname" >HTML
+                <button id="htmlcpy" class="cpy" onclick="copyhtml()">Copy</button>
+            </div>
+            <div id="CSS" class="langname" >CSS
+                <button id="csscpy" class="cpy" onclick="">Copy</button></div>
+            <div id="JavaScript" class="langname" >JAVASCRIPT
+                <button  id="jscpy" class="cpy" onclick="">Copy</button></div>
+        </div>
+        <div class="codeSpace">
+            <div  class="code">
+                <textarea id="html" onkeyup="out()"></textarea>
+            </div>
+            <div  class="code">
+                <textarea id="css" onkeyup="out()"></textarea>
+            </div>
+            <div id="js" class="code">
+                <textarea id="js" onkeyup="out()"></textarea>
+            </div>
+        </div>
+        <div id="outputtitle">
+            OUTPUT
+        </div>
+
+        <div class="output">
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="CodePen.js"></script>
+</body>
+</html>
